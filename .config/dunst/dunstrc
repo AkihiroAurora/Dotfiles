@@ -1,0 +1,39 @@
+[global]
+    width = 400
+    offset = 5x5
+    
+    progress_bar_min_width = 380
+    progress_bar_max_width = 380
+    progress_bar_corner_radius = 2
+
+    padding = 10
+    horizontal_padding = 10
+    frame_width = 1
+    gap_size = 3
+    font = "CaskaydiaCove Nerd Font 14"
+
+    corner_radius = 2
+
+    background = "1a1b26"
+    foreground = "#e0def4"
+
+[urgency_low]
+    background = "#1a1b26"
+    highlight = "#2ac3de"
+    frame_color = "#2ac3de"
+    default_icon = "dialog-information"
+    format = "<b><span foreground='#2ac3de'>%s</span></b>\n%b"
+
+[urgency_normal]
+    background = "#1a1b26"
+    highlight = "#9ece6a"
+    frame_color = "#9ece6a"
+    default_icon = "dialog-warning"
+    format = "<b><span foreground='#9ece6a'>%s</span></b>\n%b"
+
+[urgency_critical]
+    background = "#1a1b26"
+    highlight = "#f7768e"
+    frame_color = "#f7768e"
+    default_icon = "dialog-error"
+    format = "<b><span foreground='#f7768e'>%s</span></b>\n%b"
