@@ -11,7 +11,7 @@
 	red: #f7768e;
 	yellow: #e0af68;
 
-	font: "Cascadian Cove CF 12";
+	font: "CaskaydiaCove Nerd Font 12";
 
 	foreground: @white;
 	active-background: @blue;

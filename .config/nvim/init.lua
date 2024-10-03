@@ -22,6 +22,7 @@ require('lazy').setup {
   require 'plugins.lsp',
   require 'plugins.autoformat',
   require 'plugins.autocompletion',
+  require 'plugins.comment',
   require 'plugins.treesitter',
   require 'plugins.neo-tree',
   require 'plugins.indent-blankline',
