@@ -23,6 +23,9 @@ vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
 -- save file
 vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
 
+-- open Lazy gui
+vim.keymap.set('n', '<leader>l', '<cmd> Lazy <CR>', opts)
+
 -- Window management
 vim.keymap.set('n', '<leader>v', '<C-w>v', opts) -- split window vertically
 vim.keymap.set('n', '<leader>h', '<C-w>s', opts) -- split window horizontally
