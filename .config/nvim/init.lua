@@ -19,6 +19,7 @@ require('lazy').setup {
   require 'plugins.lualine',
   require 'plugins.gitsigns',
   require 'plugins.telescope',
+  require 'plugins.harpoon',
   require 'plugins.lsp',
   require 'plugins.autoformat',
   require 'plugins.autocompletion',

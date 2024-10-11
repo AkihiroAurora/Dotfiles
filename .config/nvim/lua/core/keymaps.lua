@@ -17,6 +17,9 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Select all
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
 
+-- delete single character without copying into register
+vim.keymap.set('n', 'x', '"_x', opts)
+
 -- quit file
 vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
 
@@ -24,13 +27,19 @@ vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
 vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
 
 -- open Lazy gui
-vim.keymap.set('n', '<leader>l', '<cmd> Lazy <CR>', opts)
+vim.keymap.set('n', '<leader>l', '<cmd> Lazy <CR>', { noremap = true, silent = true, desc = 'Open Lazy menu' })
 
 -- Window management
 vim.keymap.set('n', '<leader>v', '<C-w>v', opts) -- split window vertically
 vim.keymap.set('n', '<leader>h', '<C-w>s', opts) -- split window horizontally
 vim.keymap.set('n', '<leader>se', '<C-w>=', opts) -- make split windows equal width & height
 vim.keymap.set('n', '<leader>xs', ':close<CR>', opts) -- close current split window
+
+-- Resize with arrows
+vim.keymap.set('n', '<S-j>', ':resize -2<CR>', opts)
+vim.keymap.set('n', '<S-k>', ':resize +2<CR>', opts)
+vim.keymap.set('n', '<S-h>', ':vertical resize -2<CR>', opts)
+vim.keymap.set('n', '<S-l>', ':vertical resize +2<CR>', opts)
 
 -- Navigate between splits
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', opts)

@@ -29,11 +29,6 @@ zinit cdreplay -q
 # Load oh-my-posh configuration
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
 
-# Start tmux automatically if not already in a tmux session
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux
-fi
-
 # Keybindings
 bindkey -e
 bindkey '^p' history-search-backward

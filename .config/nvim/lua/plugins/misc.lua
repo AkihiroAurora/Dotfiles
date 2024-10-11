@@ -1,8 +1,11 @@
 return {
-  -- Tmux & split window navigation
+  -- Toggle terminal
   {
-    'christoomey/vim-tmux-navigator',
+    { 'akinsho/toggleterm.nvim', version = '*', config = true },
+
+    vim.keymap.set('n', '<leader>tt', '<cmd> ToggleTerm <CR>', { desc = '[T]oggle [T]erminal' }),
   },
+
   -- Detect tabstop and shiftwidth automatically
   {
     'tpope/vim-sleuth',
