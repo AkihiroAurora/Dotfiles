@@ -10,7 +10,7 @@
     horizontal_padding = 10
     frame_width = 1
     gap_size = 3
-    font = "CaskaydiaCove Nerd Font 14"
+    font = "JetBrainsMono Nerd Font 14"
 
     corner_radius = 2
 
